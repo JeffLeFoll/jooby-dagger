@@ -4,18 +4,10 @@ import coop.avalonlab.awesome.*;
 import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoSet;
-import dagger.multibindings.Multibinds;
-
-import java.util.Set;
-
 
 @Module
 abstract class AwesomeModule {
-
-    @Multibinds
-    abstract Set<MyAwesomeInterface> myAwesomeInterfaces();
-
-   /*@Binds @IntoSet
+    @Binds @IntoSet
     abstract MyAwesomeInterface myAwesomeInterfacesOne(MyAwesomeImplOne implOne);
 
     @Binds @IntoSet
@@ -25,6 +17,5 @@ abstract class AwesomeModule {
     abstract MyAwesomeInterface myAwesomeInterfacesThree(MyAwesomeImplThree implThree);
 
     @Binds @IntoSet
-    abstract MyAwesomeInterface myAwesomeInterfacesFour(MyAwesomeImplFour implFour);*/
-
+    abstract MyAwesomeInterface myAwesomeInterfacesFour(MyAwesomeImplFour implFour);
 }
