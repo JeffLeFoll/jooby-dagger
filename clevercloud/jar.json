@@ -1,0 +1,9 @@
+{
+  "build": {
+    "type": "gradle",
+    "goal": "clean assemble"
+  },
+  "deploy": {
+    "jarName": "./build/libs/jooby-dagger-1.0.0-all.jar"
+  }
+}
